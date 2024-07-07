@@ -1,0 +1,30 @@
+{
+  "name": "qr-generator",
+  "version": "1.0.0",
+  "description": "QR Code Generator for Karya",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "qrcode": "^1.5.3",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SattyaP/qr-karya.git"
+  },
+  "keywords": [
+    "qrcode",
+    "karya"
+  ],
+  "author": "SattyaP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SattyaP/qr-karya/issues"
+  },
+  "homepage": "https://github.com/SattyaP/qr-karya#readme"
+}
