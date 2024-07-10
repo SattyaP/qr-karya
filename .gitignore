@@ -2,3 +2,4 @@ node_modules
 qrcodes
 package-lock.json
 Karya Approved.xlsx
+*.zip
