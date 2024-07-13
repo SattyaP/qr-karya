@@ -23,13 +23,16 @@ function generateByFile(files) {
     }
 
     data.forEach((item) => {
-      const link = item["Link Folder"].trim();
-      let name = sanitizeFileName(item["Judul"].trim());
-
-      if (name.length === 0) {
+      if (item["Judul"].length === 0) {
         console.error("Invalid file name after sanitization. Skipping entry.");
         return;
+      } else if (item["Link Video"] === undefined) {
+        console.error("Invalid link. Skipping entry.");
+        return;
       }
+
+      const link = item["Link Video"].trim();
+      let name = sanitizeFileName(item["Judul"].trim());
 
       const filePath = path.join(categoryDir, `${name}.png`);
 
